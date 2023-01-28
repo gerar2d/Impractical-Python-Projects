@@ -22,6 +22,21 @@ def main():
                 'Storyboard', 'Sweet Tea', 'TeeTee', 'Wheezy Joe',
                 "Winston 'Jazz Hands'", 'Worms')
 
+    middle = ('Appleyard', 'Bigmeat', 'Bloominshine', 'Boogerbottom',
+                'Breedslovetrout', 'Butterbaugh', 'Clovenhoof', 'Clutterbuck',
+                'Cocktoasten', 'Endicott', 'Fewhairs', 'Gooberdapple', 'Goodensmith',
+                'Goodpasture', 'Guster', 'Henderson', 'Hooperbag', 'Hoosenater',
+                'Hootkins', 'Jefferson', 'Jenkins', 'Jingley-Schmidt', 'Johnson',
+                'Kingfish', 'Listenbee', "M'Bembo", 'McFadden', 'Moonshine', 'Nettles',
+                'Noseworthy', 'Olivetti', 'Outerbridge', 'Overpeck', 'Overturf',
+                'Oxhandler', 'Pealike', 'Pennywhistle', 'Peterson', 'Pieplow',
+                'Pinkerton', 'Porkins', 'Putney', 'Quakenbush', 'Rainwater',
+                'Rosenthal', 'Rubbins', 'Sackrider', 'Snuggleshine', 'Splern',
+                'Stevens', 'Stroganoff', 'Sugar-Gold', 'Swackhamer', 'Tippins',
+                'Turnipseed', 'Vinaigrette', 'Walkingstick', 'Wallbanger', 'Weewax',
+                'Weiners', 'Whipkey', 'Wigglesworth', 'Wimplesnatch', 'Winterkorn',
+                'Woolysocks')
+    
     last = ('Appleyard', 'Bigmeat', 'Bloominshine', 'Boogerbottom',
                 'Breedslovetrout', 'Butterbaugh', 'Clovenhoof', 'Clutterbuck',
                 'Cocktoasten', 'Endicott', 'Fewhairs', 'Gooberdapple', 'Goodensmith',
@@ -38,11 +53,12 @@ def main():
                 'Woolysocks')
     while True:
         first_name = random.choice(first)
+        middle_name = random.choice(middle)
         last_name = random.choice(last)
 
         print("\n\n")
         # Trick Idle by using "fatal error" detting to print name in red.
-        print(f"{first_name} {last_name}")
+        print(f"{first_name} \"{middle_name}\" {last_name}")
         print("\n\n")
 
         try_again = input("Try Again? (Press Enter to continue else n to Exit)\n ")
